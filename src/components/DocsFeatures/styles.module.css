@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  justify-items: center;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: medium;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.primary_button {
+  background-color: rgb(136, 73, 136);
+  border: 3px solid rgb(94, 49, 94);
+  color: rgb(243, 243, 243);
+}
+.primary_button:hover {
+  background-color: rgb(165, 89, 165);
+  border: 3px solid rgb(148, 80, 148);
+}
+.secondary_button {
+  background-color: rgb(255, 246, 255);
+  border: 3px solid rgb(153, 83, 153);
+}
+.secondary_button:hover {
+  background-color: rgb(165, 89, 165);
+  border: 3px solid rgb(148, 80, 148);
+  color: rgb(243, 243, 243);
+}
+.disabled_button:disabled {
+  background-color: rgb(230, 229, 229);
+  border: 3px solid rgb(175, 175, 175);
+  color: rgb(133, 133, 133);
+  cursor: not-allowed;
+}
+.error_button {
+  background-color: rgb(211, 85, 85);
+  border: 3px solid rgb(163, 49, 49);
+  color: rgb(243, 243, 243);
+}

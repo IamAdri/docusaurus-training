@@ -1,0 +1,101 @@
+---
+sidebar_position: 1
+---
+
+# My assessment
+
+## Line numbering
+
+### Default option
+
+By default all code blocks have line numbering after the recent update, meaning you do not need to add manually `showLineNumbers` key to the code block.
+
+So, if you write your code block like this:
+
+```tsx hideLineNumbers
+tsx title="src/components/TemplateFunction.ts"
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+```
+
+It will be displayed in the web application like this:
+
+```tsx title="src/components/TemplateFunction.ts"
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+```
+
+### Hide line numbering
+
+In case you want to hide line numbering for a specific code block you can do it by adding `hideLineNumbers` key within the language meta string (don't forget to add space directly before the key).
+
+So you write your code in this way:
+
+```tsx hideLineNumbers
+tsx hideLineNumbers title="src/components/TemplateFunction.ts"
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+```
+
+And it will be displayed in the web application without numbers:
+
+```tsx hideLineNumbers title="src/components/TemplateFunction.ts"
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+```
+
+### Custom counter start value
+
+By default, the counter starts at line number 1. It's possible to pass a custom counter start value to split large code blocks for readability and it will override the default option:
+
+So, if you write your code block like this:
+
+```tsx hideLineNumbers
+tsx showLineNumbers=3 title="src/components/TemplateFunction.ts"
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+```
+
+It will be displayed in the web application like this:
+
+```tsx showLineNumbers=3 title="src/components/TemplateFunction.ts"
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+```
+
+### Syntax highlighting
+
+The default option of displaying line numbering does not affect the way you used before other syntax highlighting such as line highlighting.
+
+```tsx {3,6} title="src/components/TemplateFunction.ts"
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+```
