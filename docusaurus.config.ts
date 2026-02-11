@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import remarkBreaks from "remark-breaks";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -41,7 +42,16 @@ const config: Config = {
       "classic",
       {
         docs: {
+          remarkPlugins: [remarkBreaks],
           sidebarPath: "./sidebars.ts",
+          versions: {
+            current: {
+              label: "Next 🚧",
+            },
+            "1.1.0": {
+              label: "1.1.0",
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -88,10 +98,19 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
+        {
+          type: "docsVersionDropdown",
+          position: "right",
+        },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/IamAdri",
           label: "GitHub",
+          position: "left",
+        },
+        {
+          href: "./contact",
+          label: "Contact",
           position: "left",
         },
       ],

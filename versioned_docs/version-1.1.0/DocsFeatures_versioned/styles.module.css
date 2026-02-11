@@ -9,21 +9,21 @@
 }
 
 .primary_button {
-  background-color: rgb(80, 109, 240);
-  border: 3px solid rgb(65, 89, 196);
+  background-color: rgb(136, 73, 136);
+  border: 3px solid rgb(94, 49, 94);
   color: rgb(243, 243, 243);
 }
 .primary_button:hover {
-  background-color: rgb(53, 84, 221);
-  border: 3px solid rgb(36, 58, 155);
+  background-color: rgb(165, 89, 165);
+  border: 3px solid rgb(148, 80, 148);
 }
 .secondary_button {
-  background-color: rgb(228, 232, 248);
-  border: 3px solid rgb(112, 132, 219);
+  background-color: rgb(255, 246, 255);
+  border: 3px solid rgb(153, 83, 153);
 }
 .secondary_button:hover {
-  background-color: rgb(112, 132, 219);
-  border: 3px solid rgb(80, 94, 156);
+  background-color: rgb(165, 89, 165);
+  border: 3px solid rgb(148, 80, 148);
   color: rgb(243, 243, 243);
 }
 .disabled_button:disabled {
@@ -33,7 +33,7 @@
   cursor: not-allowed;
 }
 .error_button {
-  background-color: rgb(218, 65, 65);
-  border: 3px solid rgb(182, 42, 42);
+  background-color: rgb(211, 85, 85);
+  border: 3px solid rgb(163, 49, 49);
   color: rgb(243, 243, 243);
 }

@@ -21,14 +21,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.image {
-  border-radius: 35%;
-}
-
-.container {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  gap: 55px;
-}
