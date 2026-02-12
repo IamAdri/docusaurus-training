@@ -109,7 +109,7 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "./contact",
+          to: "/contact",
           label: "Contact",
           position: "left",
         },
